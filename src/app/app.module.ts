@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { BodyModalComponent } from './components/body-modal/body-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ModalComponent
+    ModalComponent,
+    BodyModalComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,7 @@ import { ModalComponent } from './components/modal/modal.component';
     ModalModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // entryComponents: [ModalComponent]
 })
 export class AppModule { }
